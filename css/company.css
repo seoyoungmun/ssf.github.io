@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/**************************/
+.left{padding-right: 150px; 1padding-top: 111px;}
+/*****************************/
+
+.we_design{background: url(../images/sub_company/we_design_bg.jpg) no-repeat center 15%; height: 100vh; padding-top: 111px; box-sizing: border-box; background-size: cover; text-align: center; position: relative;}
+.we_design h1{font-weight: 500; font-size: 5vw; color: #fff; margin-top: 4vw;}
+.we_design h2{font-weight: 400; font-size: 1.75vw; margin-top: 15px; position: absolute; left: 32.5%;}
+.we_design h2 span{font-weight: 300; font-size: 1.15vw; display: none;}
+.we_design h4{font-weight: 300; font-size: 2.6vw; color: #fff; position: absolute; bottom: 30px; right: 25px;}
+.we_design h4 span{color: #c0c300;}
+.we_design .first_show{display: inline-block;}

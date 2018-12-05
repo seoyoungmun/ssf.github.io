@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500');
+
+/*나눔바른고딕*/
+@font-face {
+    font-family: nanum;
+    font-weight:400;
+    src:local('Nanum Barun Gothic'),
+    local('NanumBarunGothic'),
+    url(../../../font/NanumBarunGothic.ttf) format('truetype'),
+    url(../../../font/NanumBarunGothic.eot) format('embedded-opentype'),
+    url(../../../font/NanumBarunGothic.woff) format('woff'),
+    url(../../../font/NanumBarunGothic.woff2) format('woff2');
+}
+@font-face {
+    font-family: nanum;
+    font-weight:700;
+    src:local('Nanum Barun Gothic Bold'),
+    local('NanumBarunGothicBold'),
+    url(../../../font/NanumBarunGothicBold.ttf) format('truetype'),
+    url(../../../font/NanumBarunGothicBold.eot) format('embedded-opentype'),
+    url(../../../font/NanumBarunGothicBold.woff) format('woff'),
+    url(../../../font/NanumBarunGothicBold.woff2) format('woff2');
+}
+@font-face {
+    font-family: nanum;
+    font-weight:300;
+    src:local('Nanum Barun Gothic Light'),
+    local('NanumBarunGothicLight'),
+    url(../../../font/NanumBarunGothicLight.ttf) format('truetype'),
+    url(../../../font/NanumBarunGothicLight.eot) format('embedded-opentype'),
+    url(../../../font/NanumBarunGothicLight.woff) format('woff'),
+    url(../../../font/NanumBarunGothicLight.woff2) format('woff2');
+}
+@font-face {
+    font-family: nanum;
+    font-weight:200;
+    src:local('Nanum Barun Gothic Ultra Light'),
+    local('NanumBarunGothicUltraLight'),
+    url(../../../font/NanumBarunGothicUltraLight.ttf) format('truetype'),
+    url(../../../font/NanumBarunGothicUltraLight.eot) format('embedded-opentype'),
+    url(../../../font/NanumBarunGothicUltraLight.woff) format('woff'),
+    url(../../../font/NanumBarunGothicUltraLight.woff2) format('woff2');
+}
+
+
+img{border:0;}
+body{font-size:14px; color:#333; font-family: 'Montserrat', '나눔바른고딕', nanum, sans-serif,'맑은고딕';}
+.in{margin-right:150px;}
+
+/*left width:1530px*/
+
+/*오른쪽 브랜드 네비게이션*/
+/* #e8e0c6 #c0c300 #355d25 */
+.nav_right{width: 375px; height: 100vh; position: fixed; z-index: 1000; right: -225px; top: 35px;}
+.nav_right_main{width: 150px; height: 100%; background: #404040;}
+.nav_right_main ul{display: none;}
+.nav_right_main>li{transition: all 0.35s;}
+.nav_right_main>li>a{width: 100%; height: 65px; color: #e8e0c6; display: block; line-height: 65px; text-align: center;}
+.nav_right_sub{position: absolute; left: 150px; top: 0; width: 225px; background: #355d25; height: 100%;}
+.nav_right_sub>li>a{width: 100%; height: 7.2vh; display: block; line-height: 7.2vh; 1text-align: center; padding-left: 20px; color: rgba(255,255,255,.75);}
+
+/*
+.nav_right ul{height:100%; float: right; color: #e8e0c6; z-index: 150; }
+.nav_right a{display: inline-block; width: 100%;}
+
+.nav_right_main{width: 150px; background:#404040; position:fixed; right:0; top: 35px;}
+.nav_right_main a{height: 65px; line-height: 65px; text-align: center;}
+.nav_right_main ul li:first-child{color:#c0c300;}
+
+.nav_right_sub{background-color:#355d25; width:225px; right:-225px; top:35px; position:fixed;}
+.nav_right_sub a{height: 60px; line-height: 60px; text-align: left; padding-left:25px;}
+*/
+/*오른쪽 브랜드 네비게이션*/
+
+
+/*삼성물산 연두색 네비게이션*/
+.nav_top{width:100%; background-color: #c0c300; color:#fff; padding-left: 45px; padding-right: 45px; box-sizing: border-box; position:fixed; height: 35px; z-index: 150;}
+
+.nav_top .nav_top_left li a{float:left; position: relative; padding:9px 27px;}
+.nav_top .nav_top_left li::after{content: ''; width: 2px; height: 15px; background-color: #fff; display: inline-block; top:10px;  position: absolute;}
+.nav_top .nav_top_left li:last-child::after{background: transparent;}
+
+.nav_top .nav_top_right li a{float:right; position: relative; padding:9px 27px;}
+/*삼성물산 연두색 네비게이션*/
+
+/*.wwidth{width:100%; max-width: 1530px;}*/
+
+/*메인네비게이션*/
+.header{position: fixed; box-sizing: border-box; top:35px; z-index: 100; width: 100%; padding-right: 150px; padding-bottom: 30px; }
+
+.header .nav_bottom{height: 76px; background: #fff; position: relative; padding-left: 72px; padding-right: 72px; font-size: 1.143em; }
+.header .nav_bottom.on{box-shadow: 0 2px 2px 0 rgba(0,0,0,.15);}
+.header .nav_bottom .nav_bottom_left{width: 600px;}
+.header .nav_bottom .nav_bottom_left li{float: left; padding: 0 21px; padding-top: 30px; }
+
+.header .nav_bottom .nav_bottom_right li{float: right; padding: 0 21px; padding-top: 30px; }
+
+.header .nav_bottom .logo{position: absolute; left:50%; margin-left: -25px; top: 50%; margin-top: -26px;}
+
+.nav_bottom a{transition: all 0.5s;}
+.nav_bottom a:not(.except):hover{color:#c0c300; border-bottom:2px solid #c0c300;}
+/*메인네비게이션*/
+
+/*메인 네비게이션 펼쳐지는거*/
+.bot_menu ul{background: #edede1; width: 100%; height: 58px; display:none;}
+.bot_menu ul:nth-child(odd) li{float:left;}
+.bot_menu ul:nth-child(even) li{float:right;}
+.bot_menu .botmenu1{padding-left: 72px;}
+.bot_menu .botmenu2{padding-left: 22%;}
+.bot_menu .botmenu3{padding-right: 72px;}
+.bot_menu .botmenu3 li:first-child{margin-right:72px;}
+.bot_menu li{padding: 0 21px; padding-top: 23px;}
+/*메인 네비게이션 펼쳐지는거*/
+
+.footer .footer_top{width:1150px; margin-left:auto; margin-right:auto; border-bottom:1px solid #333; position: relative; padding:50px 0;}
+.footer .footer_top .sitemap{text-align:center;}
+.footer .footer_top .sitemap ul{float:left; width:146px; font-weight:100;}
+.footer .footer_top .sitemap ul h6{font-size:18px; font-weight:400;}
+.footer .footer_top .sitemap ul li{padding:12px 0;}
+.footer .footer_top .familysite{position:absolute; width:250px; right:24px; top:55px; background-color:#fff; font-size:16px;}
+.footer .footer_top .familysite .familysite_btn{width: 250px; height:35px; line-height:35px; display:block; border: 1px solid #808080; background-image:url(../images/common/footer_familysite_btn.png); background-repeat:no-repeat; background-position: top 10px right 10px; padding-left:10px; text-align:center; box-sizing:border-box; padding-right:32px;}
+.footer .footer_top .familysite .familysite_menu{border:1px solid #808080; border-top:0; height:214px;}
+.footer .footer_top .familysite .familysite_menu li{width:250px; height:35px; line-height:35px; border-bottom:1px solid rgba(128,128,128,0.5); padding-left:10px;}
+.footer .footer_top .familysite .familysite_menu li:nth-child(2){border:0;}
+.footer .footer_top .familysite .familysite_menu li:nth-child(5){border:0;}
+.footer .footer_top .familysite .familysite_menu li:nth-child(6){border:0;}
+
+.footer .footer_bot{text-align:center; padding:50px 0; font-size:12px;}
+.footer .footer_bot .footer_bot_info{height:15px; line-height:15px;}
+.footer .footer_bot .footer_bot_info a:nth-child(1){position:relative; margin-right:24px; margin-left:12px;}
+.footer .footer_bot .footer_bot_info a:nth-child(2){position:relative; margin-right:24px;}
+.footer .footer_bot .footer_bot_info a:nth-child(1)::after, .footer .footer_bot p a:nth-child(2)::after{content: ''; width: 1px; height: 15px; background-color: #333; display: inline-block; top:0; right:-12px;  position: absolute;}
+.footer .footer_bot .footer_bot_copy{height:13px; margin-top:15px;}
+.footer .footer_bot .footer_bot_copy span{line-height:13px; vertical-align:3px; margin-left:6px;}
+
+.clickme{text-decoration: underline;}

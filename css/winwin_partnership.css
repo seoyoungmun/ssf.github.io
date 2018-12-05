@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/**************************/
+.left{padding-right: 150px; padding-top: 111px;}
+/*****************************/
+
+.big_title{background: url(../images/sub_winwinpartnership/title_bg.jpg) no-repeat 100% center; height: 235px; text-align: center; position: relative;}
+.big_title_text{position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.big_title h1{font-size: 43px; font-weight: 500;}
+.big_title h3{font-size: 18px; margin-top: 10px;}
+
+.partnership_nav{height: 200px; font-size: 20px; width: 700px; display: flex; text-align: center; margin: 0 auto; line-height: 200px;}
+.partnership_nav li{font-weight: 100; flex-grow: 1;}
+.partnership_nav li a{transition: color 0.5s; padding-bottom: 3px;}
+.partnership_nav li a.on{color: #c0c300; border-bottom: 2px solid #c0c300;}
+
+.little_title{background: url(../images/sub_winwinpartnership/little_title_bg.jpg) no-repeat center center; background-size: cover; height: 200px; position: relative; margin-bottom: 75px;}
+.little_title .little_title_text{position: absolute; transform: translate(-50%,-50%); top: 50%; left: 50%;}
+.little_title h1{font-size: 36px;}
+.little_title h3{font-size: 18px; padding-top: 15px; font-weight: 100;}
+
+.mission{text-align: center; margin-bottom: 150px;}
+
+.policy_info{height: 44vw; position: relative; margin: 30px 0 150px;}
+.policy_info .parts{position: absolute; transform: translate(-50%, -50%);}
+.policy_info .parts h5{font-size: 1.125vw; font-weight: 400; padding: 10px 0;}
+.policy_info .parts p{font-size: 0.9375vw;font-weight: 100; padding: 5px 0;}
+.policy_info .policy0{left: 30.5%; top: 49%;}
+.policy_info .policy0 img{width: 41.61458333333333vw;}
+.policy_info .policy1{left: 29.5%; top: 0; transform: translate(0,0);}
+.policy_info .policy1 img{width: 28.59375vw;}
+.policy_info .policy2{left: 70%; top: 7.3%;}
+.policy_info .policy3{left: 55%; top: 20.4%;}
+.policy_info .policy3 img{width: 25.78125vw;}
+.policy_info .policy4{left: 78%; top: 25%;}
+.policy_info .policy5{left: 60.7%; top: 41%;}
+.policy_info .policy5 img{width: 20.9375vw;}
+.policy_info .policy6{left: 81%; top: 49%;}
+.policy_info .policy7{left: 58.8%; top: 64.5%;}
+.policy_info .policy7 img{width: 18.90625vw;}
+.policy_info .policy8{left: 78%; top: 73%;}
+.policy_info .policy9{left: 50.5%; top: 84.7%;}
+.policy_info .policy9 img{width: 18.90625vw;}
+.policy_info .policy10{left: 72.5%; top: 90%;}
+.policy_info .policy11{left: 42.4%; top: 99.4%; transform: translate(-100%,-100%);}
+.policy_info .policy11 img{width: 12.39583333333333vw;}
+
+.parts, .mission_img{opacity: 0; transition: width 5000ms ease-in, opacity 1s ease-out;}
+.active{opacity: 1;}
